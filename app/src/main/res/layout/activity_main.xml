@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:aandroid="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/main_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mainbackground"
+        android:contentDescription="@string/todo" />
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="732dp"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="246dp"
+                android:background="@drawable/kontur"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="237dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-light"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    tools:ignore="LabelFor" />
+
+                <LinearLayout
+                    android:id="@+id/LL1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="236dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:ems="10"
+                        android:fontFamily="sans-serif-light"
+                        android:importantForAutofill="no"
+                        android:inputType="numberDecimal"
+                        android:maxLength="8"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        tools:ignore="LabelFor" />
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/green"
+                        android:entries="@array/num"
+                        android:fontFamily="sans-serif-light"
+                        android:popupBackground="@color/green"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/price_for_one"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="298dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/kontur"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="238dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    tools:ignore="LabelFor"
+                    android:fontFamily="sans-serif-light"/>
+
+                <LinearLayout
+                    android:id="@+id/LL2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editText4"
+                        android:layout_width="237dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:ems="10"
+                        android:importantForAutofill="no"
+                        android:inputType="numberDecimal"
+                        android:maxLength="8"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        tools:ignore="LabelFor"
+                        android:fontFamily="sans-serif-light"/>
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/green"
+                        android:entries="@array/num"
+                        android:fontFamily="sans-serif-light"
+                        android:popupBackground="@color/green" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/price_for_one"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif-light"/>
+
+                <LinearLayout
+                    android:id="@+id/LL3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/add1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/style_btn_stroke_green"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/add"
+                        android:textAllCaps="false"
+                        android:textColor="@color/grey1"
+                        android:textSize="25sp"
+                        tools:ignore="ButtonStyle"
+                        android:fontFamily="sans-serif-light"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL6"
+                android:layout_width="match_parent"
+                android:layout_height="298dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/kontur"
+                android:orientation="vertical">
+
+
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="238dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    tools:ignore="LabelFor"
+                    android:fontFamily="sans-serif-light"/>
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="238dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    tools:ignore="LabelFor"
+                    android:fontFamily="sans-serif-light"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/price_for_one"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif-light"/>
+
+                <LinearLayout
+                    android:id="@+id/LL4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/add2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/style_btn_stroke_green"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/add"
+                    android:textAllCaps="false"
+                    android:textColor="@color/grey1"
+                    android:textSize="25sp"
+                    tools:ignore="ButtonStyle"
+                    android:fontFamily="sans-serif-light"/>
+
+                <Button
+                    android:id="@+id/del1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/style_btn_stroke_green"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/del"
+                    android:textAllCaps="false"
+                    android:textColor="@color/grey1"
+                    android:textSize="25sp"
+                    tools:ignore="ButtonStyle"
+                    android:fontFamily="sans-serif-light"/>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL7"
+                android:layout_width="match_parent"
+                android:layout_height="298dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/kontur"
+                android:orientation="vertical">
+
+
+
+                <EditText
+                    android:id="@+id/editText7"
+                    android:layout_width="238dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    tools:ignore="LabelFor"
+                    android:fontFamily="sans-serif-light"/>
+
+                <EditText
+                    android:id="@+id/editText8"
+                    android:layout_width="238dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ems="10"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    tools:ignore="LabelFor"
+                    android:fontFamily="sans-serif-light"/>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/price_for_one"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif-light"/>
+
+                <LinearLayout
+                    android:id="@+id/LL8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                    android:id="@+id/del2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/style_btn_stroke_green"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/del"
+                    android:textAllCaps="false"
+                    android:textColor="@color/grey1"
+                    android:textSize="25sp"
+                    tools:ignore="ButtonStyle"
+                        android:fontFamily="sans-serif-light"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/LL5">
+
+                <Button
+                    android:id="@+id/knopka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/style_btn_stroke_green"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/comp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/grey1"
+                    android:textSize="25sp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/style_btn_stroke_green"
+                    android:padding="10dp"
+                    android:text="@string/clear"
+                    android:gravity="center_vertical"
+                    android:textAllCaps="false"
+                    android:textColor="@color/grey1"
+                    android:textSize="25sp"
+                    tools:ignore="ButtonStyle"
+                    android:fontFamily="sans-serif-light"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

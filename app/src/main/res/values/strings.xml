@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">PriceComparison</string>
+    <string name="compare">compare</string>
+    <string name="MainMeasure">main measure</string>
+    <string name="price1">quantity</string>
+    <string name="measure1">measure</string>
+    <string name="quantity1">quantity</string>
+    <string name="EndForFirst">₽ per one</string>
+
+    <string name="price2">price</string>
+    <string name="measure2">measure</string>
+    <string name="quantity2">quantity</string>
+    <string name="EndForSecond">₽ per one</string>
+    <string name="comp">сравнить</string>
+    <string name="clear">очистить</string>
+    <string name="price_for_one">цена за единицу</string>
+    <string name="add">добавить</string>
+    <string name="del">удалить</string>
+    <string name="todo">TODO</string>
+
+    <string-array name="num">
+        <item>ед.</item>
+        <item>г</item>
+        <item>кг</item>
+        <item>фунт</item>
+    </string-array>
+
+    <string-array name="num_val">
+        <item>1</item>
+        <item>0.001</item>
+        <item>1</item>
+        <item>0.454</item>
+    </string-array>
+</resources>
